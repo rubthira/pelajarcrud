@@ -1,0 +1,25 @@
+body {
+    background: #eee;
+}
+
+#frm {
+    border: solid rgba(1, 1, 26, 0.904) 4px;
+    text-align: center;
+    width: 40%;
+    border-radius: 30px;
+    margin: 120px auto;
+    background: rgb(167, 214, 241);
+    padding: 50px;
+}
+
+/* #btn {
+    color: #fff;
+    width: 30%;
+    height: 9%;
+    font-size: 20px;
+    text-align: center;
+    background: #337ab7;
+    margin-top: 20px;
+
+
+} */

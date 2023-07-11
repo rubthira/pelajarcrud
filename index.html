@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>STUDENT DETAILS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:gray; ">
+
+
+    <div id="frm">
+        <h1 style="font-size: 30px; text-align: center; color: blue;">STUDENT DETAILS</h1>
+        <form name="f1" action="authenication.php" onsubmit="return validation()" method="POST">
+
+            <p>
+                <label style="font-weight: bold; font-size: 28px;">EmailAddress</label>
+                <input type="text" id="user" name="user"
+                    style="width: 39%; height: 6%; border-radius: 8px; margin-left: 19px;" />
+            </p>
+
+            <p>
+                <label style="font-weight: bold; font-size: 28px;">Password</label>
+                <input type="password" id="pass" name="pass"
+                    style="width: 39%; height: 6%; border-radius: 8px; margin-left: 68px;" />
+            </p>
+
+
+            <p>
+                <a href="index.php" style=" font-size: 50px; text-align: center;">LOGIN</a>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function validation() {
+            var id = document.f1.user.value;
+            var ps = document.f1.pass.value;
+            if (id.length == "" && ps.length == "") {
+                alert("");
+                return false;
+            }
+
+            else {
+                if (id.length == "") {
+                    alert("");
+                    return false;
+                }
+
+                if (ps.length == "") {
+                    alert("");
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
